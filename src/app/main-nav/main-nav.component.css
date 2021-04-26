@@ -7,7 +7,7 @@
 }
 
 .sidenav .mat-toolbar {
-  background: inherit;
+  background: primary;
 }
 
 .mat-toolbar.mat-primary {
