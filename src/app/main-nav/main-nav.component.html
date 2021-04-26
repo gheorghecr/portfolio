@@ -27,7 +27,10 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Document Software</span>
+      <div class="title" style="width: 2000px;">
+        <span class="siteName" [routerLink]="['']">Document Software</span>
+        <span class="loginButton"> <app-Login></app-Login></span>
+      </div>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>
