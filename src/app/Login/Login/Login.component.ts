@@ -4,6 +4,7 @@ import { PrimeNGConfig } from 'primeng/api';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogContentComponent } from '../DialogContent/DialogContent.component';
 
+
 @Component({
   selector: 'app-Login',
   templateUrl: './Login.component.html',
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
       // call login functionality only when login button is pressed
       if   (typeof result == 'object') {
         console.log(result);
-        this.addSuccessMessage();
+        this.performLogin(result.username, result.password);
       } 
     });
   }
@@ -59,6 +60,11 @@ export class LoginComponent implements OnInit {
     this.messageService.clear();
   }
 
+  private performLogin(username: string , password: string) {
+    setTimeout(() => {  
+      this.addSuccessMessage();
+     }, 2000);
+  }
 }
 
 
