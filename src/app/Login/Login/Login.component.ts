@@ -82,9 +82,9 @@ export class LoginComponent implements OnInit {
    */
    openDialogProgressSpinner() {
     this.dialogRefForProgressSpinner = this.dialog.open(ProgressSpinnerComponent, {
-      maxWidth: '800px',
-      minWidth: '400px',
-      maxHeight: '600px',
+      maxWidth: '400px',
+      minWidth: '200px',
+      maxHeight: '300px',
       data: { title: 'Please wait...'},
     });
   }
