@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LoginComponent } from './Login/Login/Login.component';
 import { DialogContentComponent } from './Login/DialogContent/DialogContent.component';
-
+import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, }  from '@angular/material/button';
@@ -32,12 +32,14 @@ import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     LoginComponent,
     DialogContentComponent,
+    ProgressSpinnerComponent
   ],
   imports: [
     BrowserModule,
