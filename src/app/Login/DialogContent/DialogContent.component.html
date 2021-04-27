@@ -1,11 +1,9 @@
-<mat-tab-group [dynamicHeight]="true" >
-  <mat-tab  label="Login" >
-    <h2 mat-dialog-title class="mt-2">Login</h2>
-    <mat-dialog-content style="height: 100px;" class="mat-typography">
+<h2 mat-dialog-title class="mt-2">Login</h2>
+    <mat-dialog-content style="height: 120px;" class="mat-typography">
       <p>
         <input
           type="text"
-          class="form-control"
+          class="form-control mt-2"
           [(ngModel)]="data.username"
           placeholder="Username"
         />
@@ -30,49 +28,3 @@
       >
         Login
       </button>
-    </mat-dialog-actions>
-  </mat-tab>
-  <mat-tab label="Register"> 
-    <h2 mat-dialog-title class="mt-2">Register</h2>
-    <mat-dialog-content class="mat-typography">
-      <p>
-        <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="data.username"
-          placeholder="Username"
-        />
-      </p>
-
-      <p>
-        <input
-          type="password"
-          class="form-control"
-          [(ngModel)]="data.password"
-          placeholder="Password"
-        />
-      </p>
-
-      <p>
-        <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="data.registerPassword"
-          placeholder="Password"
-        />
-      </p>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end" class="mb-2">
-      <button mat-button mat-dialog-close>Cancel</button>
-      <button
-        mat-flat-button
-        color="primary"
-        [mat-dialog-close]="data"
-        cdkFocusInitial
-      >
-        Login
-      </button>
-    </mat-dialog-actions>
-  </mat-tab>
-</mat-tab-group>
-
