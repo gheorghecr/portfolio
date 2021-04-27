@@ -29,6 +29,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { FormsModule } from '@angular/forms';
     MatTooltipModule,
     MatTreeModule,
     MatDialogModule, 
-    FormsModule
+    FormsModule,
+    ProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
