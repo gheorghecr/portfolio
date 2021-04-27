@@ -23,14 +23,14 @@
       <!-- Right side Of the Content (MetaData/Download/NextPrevious) -->
       <div class="row metaDataDiv">Metadata</div>
       <div class="row downloadDiv">
-        <p-button label="Download" icon="pi pi-download"></p-button>
+        <p-button  (click)="downloadDocClicked()"  label="Download" icon="pi pi-download"></p-button>
       </div>
       <div class="row nextPreviousDiv">
         <div class="col-xs-4 box">
-          <p-button label="" icon="pi pi-caret-left"></p-button>
+          <p-button (click)="previousVersionClicked()"  icon="pi pi-caret-left"></p-button>
         </div>
         <div class="col-xs-4 box">
-          <p-button label="" icon="pi pi-caret-right"></p-button>
+          <p-button (click)="nextVersionClicked()" icon="pi pi-caret-right" ></p-button>
         </div>
       </div>
     </div>
