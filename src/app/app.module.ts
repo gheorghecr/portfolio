@@ -30,6 +30,8 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { RouterModule } from '@angular/router';
+import { FirstArticleComponent } from './FirstArticle/FirstArticle/FirstArticle.component';
 
 
 
@@ -66,7 +68,12 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     MatTreeModule,
     MatDialogModule, 
     FormsModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    FirstArticleComponent,
+    RouterModule.forRoot([
+      { path: "firstArticle", component: ProgressSpinnerComponent },
+      // { path: "multipleThermometer", component: MultipleThermometersComponent },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
