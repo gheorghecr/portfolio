@@ -1,0 +1,25 @@
+.smallDiv {
+    background-color: lightblue;
+}
+
+.bigDiv {
+    background-color: yellow;
+}
+
+.pdfContainer {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.col1 {
+    background-color: green;
+    height: 70%;
+}
+.col2 {
+    background-color: red;
+    height: 15%;
+}
+.col3 {
+    background-color: pink;
+    height: 15%;
+}
