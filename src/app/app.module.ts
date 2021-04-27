@@ -31,18 +31,18 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { RouterModule } from '@angular/router';
-import { FirstArticleComponent } from './FirstArticle/FirstArticle/FirstArticle.component';
-
+import { FirstArticleComponent } from './firstArticle/firstArticle.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     MainNavComponent,
     LoginComponent,
     DialogContentComponent,
-    ProgressSpinnerComponent
-  ],
+    ProgressSpinnerComponent,
+    FirstArticleComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -69,9 +69,8 @@ import { FirstArticleComponent } from './FirstArticle/FirstArticle/FirstArticle.
     MatDialogModule, 
     FormsModule,
     ProgressSpinnerModule,
-    FirstArticleComponent,
     RouterModule.forRoot([
-      { path: "firstArticle", component: ProgressSpinnerComponent },
+      { path: "firstArticle", component: FirstArticleComponent },
       // { path: "multipleThermometer", component: MultipleThermometersComponent },
     ]),
   ],

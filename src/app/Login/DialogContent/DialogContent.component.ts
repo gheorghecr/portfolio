@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { LoginData } from '../LoginData';
+import { LoginData } from '../Login/LoginData';
 
 /**
  * This is the component that is responsible for the modal view.
