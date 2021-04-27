@@ -1,31 +1,31 @@
-
 <h2 mat-dialog-title class="mt-2">Login</h2>
-    <mat-dialog-content style="height: 120px;" class="mat-typography">
-      <p>
-        <input
-          type="text"
-          class="form-control mt-2"
-          [(ngModel)]="data.username"
-          placeholder="Username"
-        />
-      </p>
+<mat-dialog-content style="height: 120px" class="mat-typography">
+  <p>
+    <input
+      type="text"
+      class="form-control mt-2"
+      [(ngModel)]="data.username"
+      placeholder="Username"
+    />
+  </p>
 
-      <p>
-        <input
-          type="password"
-          class="form-control"
-          [(ngModel)]="data.password"
-          placeholder="Password"
-        />
-      </p>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end" class="mb-2">
-      <button mat-button mat-dialog-close="false">Cancel</button>
-      <button
-        mat-flat-button
-        color="primary"
-        [mat-dialog-close]="data"
-        cdkFocusInitial
-      >
-        Login
-      </button>
+  <p>
+    <input
+      type="password"
+      class="form-control"
+      [(ngModel)]="data.password"
+      placeholder="Password"
+    />
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="mb-2">
+  <button mat-button mat-dialog-close="false">Cancel</button>
+  <button
+    mat-flat-button
+    color="primary"
+    [mat-dialog-close]="data"
+    cdkFocusInitial
+  >
+    Login
+  </button></mat-dialog-actions
+>

@@ -9,20 +9,16 @@ import { LoginData } from '../LoginData';
 @Component({
   selector: 'app-DialogContent',
   templateUrl: './DialogContent.component.html',
-  styleUrls: ['./DialogContent.component.css']
+  styleUrls: ['./DialogContent.component.css'],
 })
 export class DialogContentComponent implements OnInit {
-
   constructor(
     public dialogRef: MatDialogRef<DialogContentComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: LoginData) {
-
-    }
+    @Inject(MAT_DIALOG_DATA) public data: LoginData
+  ) {}
   onNoClick(): void {
     this.dialogRef.close();
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
