@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   /**
-   * Open Dialog to add a new event
+   * Open Dialog to allow the user to log in
    */
    openDialogLogin() {
     const dialogRef = this.dialog.open(DialogContentComponent, {
@@ -35,28 +35,30 @@ export class LoginComponent implements OnInit {
       data: { username: '', password: '', registerPassword: '' },
     });
 
+    // after dialog is closed logic
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(result);
-      this.addSuccessMessage();
+      // call login functionality only when login button is pressed
+      if   (typeof result == 'object') {
+        console.log(result);
+        this.addSuccessMessage();
+      } 
     });
   }
 
+  /**
+   * Adds a pop up message giving user feedback on successfully login
+   */
   addSuccessMessage() {
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Login Successfully',
-      detail: '',
-    });
+    this.messageService.add({severity:'success', summary: 'Success', detail: 'Login Successfully'});
   }
 
+  /**
+   * Clear any pop up messages
+   */
   clearMessages() {
     this.messageService.clear();
   }
 
 }
 
-export interface LoginData {
-  username: string;
-  password: string;
-  registerPassword: string;
-}
+
