@@ -77,7 +77,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     ScrollPanelModule,
     RouterModule.forRoot([
       { path: "firstArticle", component: FirstArticleComponent },
-      // { path: "multipleThermometer", component: MultipleThermometersComponent },
+      { path: "secondArticle", component: FirstArticleComponent },
     ]),
   ],
   providers: [],
