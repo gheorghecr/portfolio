@@ -33,6 +33,8 @@ import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
+import { DividerModule } from 'primeng/divider';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 
 @NgModule({
@@ -71,6 +73,8 @@ import { CardModule } from 'primeng/card';
     FormsModule,
     ProgressSpinnerModule,
     CardModule,
+    DividerModule,
+    ScrollPanelModule,
     RouterModule.forRoot([
       { path: "firstArticle", component: FirstArticleComponent },
       // { path: "multipleThermometer", component: MultipleThermometersComponent },
