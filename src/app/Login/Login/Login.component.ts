@@ -41,11 +41,17 @@ export class LoginComponent implements OnInit {
 
     // after dialog is closed logic
     dialogRef.afterClosed().subscribe((result) => {
+      // check if used filled the username and password
+      if (result.username == "" || result.password == "") {
+        this.addWarningMessage();
+      }
       // call login functionality only when login button is pressed
-      if   (typeof result == 'object') {
+      else if (typeof result == 'object') {
         console.log(result);
         this.performLogin(result.username, result.password);
-      } 
+      } else {
+         // add error message
+      }
     });
   }
 
@@ -54,6 +60,13 @@ export class LoginComponent implements OnInit {
    */
   addSuccessMessage() {
     this.messageService.add({severity:'success', summary: 'Success', detail: 'Login Successfully'});
+  }
+
+  /**
+   * Adds a pop up message giving user feedback when the does not fill the password of username
+   */
+   addWarningMessage() {
+    this.messageService.add({severity:'warn', summary:'Warning', detail:'Username or Password was left empty!'});
   }
 
   /**

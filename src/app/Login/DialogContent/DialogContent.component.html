@@ -6,6 +6,8 @@
       class="form-control mt-2"
       [(ngModel)]="data.username"
       placeholder="Username"
+      required="true" 
+      requiredMessage="The username must not be empty!"
     />
   </p>
 
@@ -15,6 +17,8 @@
       class="form-control"
       [(ngModel)]="data.password"
       placeholder="Password"
+      required="true" 
+      requiredMessage="The password must not be empty!"
     />
   </p>
 </mat-dialog-content>
