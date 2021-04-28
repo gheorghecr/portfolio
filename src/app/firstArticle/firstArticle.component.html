@@ -20,13 +20,24 @@
 
     <div class="col smallDiv">
       <!-- Right side Of the Content (MetaData/Download/NextPrevious) -->
-      <p-card header="File Info" subheader="File Name in here" [style]="{width: '250px', height: '100%'}" styleClass="p-card-shadow">
+      <p-card header="File Info" subheader="File Name in here" [style]="{width: '250px'}" styleClass="p-card-shadow">
         <!-- Content of the card -->
-        <ng-content select="selector">
-
-        </ng-content>
+        <ul class="list-group mb-4" style="font-size:14px">
+          <li class="list-group-item">Created by: Gheorghe </li>
+          <li class="list-group-item">Last Modified: 21/02/2021 </li>
+          <li class="list-group-item">Created by: Gheorghe </li>
+          <li class="list-group-item">Last Modified: 21/02/2021 </li>
+          <li class="list-group-item">Created by: Gheorghe </li>
+          <li class="list-group-item">Last Modified: 21/02/2021 </li>
+        </ul>
+        <!-- <mat-list>
+          <mat-list-item> Pepper </mat-list-item>
+          <mat-list-item> Salt </mat-list-item>
+          <mat-list-item> Paprika </mat-list-item>
+         </mat-list> -->
+         <p-divider></p-divider>
         <!-- Footer of the card -->
-        <ng-template pTemplate="footers">
+        <ng-template pTemplate="footer ">
           <div class="row downloadDiv">
             <p-button
               (click)="downloadDocClicked()"
