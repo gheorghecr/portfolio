@@ -6,6 +6,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { LoginComponent } from './Login/Login/Login.component';
 import { DialogContentComponent } from './Login/DialogContent/DialogContent.component';
 import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
+import { FirstArticleComponent } from './firstArticle/firstArticle.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, }  from '@angular/material/button';
@@ -31,7 +32,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { RouterModule } from '@angular/router';
-import { FirstArticleComponent } from './firstArticle/firstArticle.component';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { FirstArticleComponent } from './firstArticle/firstArticle.component';
     MatDialogModule, 
     FormsModule,
     ProgressSpinnerModule,
+    CardModule,
     RouterModule.forRoot([
       { path: "firstArticle", component: FirstArticleComponent },
       // { path: "multipleThermometer", component: MultipleThermometersComponent },
