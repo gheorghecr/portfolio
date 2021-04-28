@@ -8,9 +8,10 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar color="primary">Menu</mat-toolbar>
 
-    <mat-nav-list>
-      <a mat-list-item [routerLink]="['']">Home</a>
-      <a mat-list-item [routerLink]="['/firstArticle']">First Article</a>
+    <mat-nav-list class="ml-2 mr-4">
+      <a mat-list-item  [routerLink]="['']">Home</a>
+      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">First Article</a>
+      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Second Article</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

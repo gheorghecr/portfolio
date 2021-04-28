@@ -19,3 +19,9 @@
 
 .title .siteName { float:left }
 .title .loginButton { float:right }
+
+/* Style when the user is at the current page */
+.active-list-item {
+  background-color: lightgray !important;
+  border-radius: 25px;
+}
