@@ -23,7 +23,7 @@
 /* Style when the user is at the current page */
 .active-list-item {
   background-color: lightgray !important;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .logoImageView {
