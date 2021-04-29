@@ -44,8 +44,12 @@ export class LoginComponent implements OnInit {
 
     // after dialog is closed logic
     dialogRef.afterClosed().subscribe((result) => {
+      // check if user closed the dialog without any action
+      if (!result) {
+        // do nothing
+      }
       // check if used filled the username and password
-      if (result.username == "" || result.password == "") {
+      else if (result.username == "" || result.password == "") {
         this.addWarningMessage();
       }
       // call login functionality only when login button is pressed
