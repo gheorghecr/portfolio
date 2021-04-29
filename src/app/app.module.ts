@@ -38,7 +38,6 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 
-
 @NgModule({
   declarations: [	
     AppComponent,
