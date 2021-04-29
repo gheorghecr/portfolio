@@ -25,3 +25,8 @@
   background-color: lightgray !important;
   border-radius: 25px;
 }
+
+.logoImageView {
+  width: 100px;
+  height: auto;
+}
