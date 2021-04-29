@@ -26,6 +26,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.primengConfig.ripple = true;
+    console.log('Going to get username');
+    let token = localStorage.getItem('username')? localStorage.getItem('username') : null;
+    console.log(token);
   }
 
   /**
@@ -82,6 +85,7 @@ export class LoginComponent implements OnInit {
    * @param password (String) password of the user
    */
   private performLogin(username: string , password: string) {
+    localStorage.setItem('username', username);
     this.openDialogProgressSpinner();
     setTimeout(() => {  
       this.dialogRefForProgressSpinner.close(); // close progressSpinnerDialog 
