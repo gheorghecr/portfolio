@@ -7,7 +7,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar color="primary">Menu
-      <img  class="logoImageView ml-4" id="logo" src="./assets/Logos/dfore-01.jpg" alt="logoImage"/>
+      <img [routerLink]="['/firstArticle']" class="logoImageView ml-4" id="logo" src="./assets/Logos/dfore-01.jpg" alt="logoImage"/>
     </mat-toolbar>
 
     <mat-nav-list class="ml-2 mr-4">
@@ -28,7 +28,7 @@
       </button>
       <div class="title" style="width: 2000px;">
         <!-- <span class="siteName" [routerLink]="['']">Document Software</span> -->
-        <img  class="logoImageView ml-4" id="logo" src="./assets/Logos/dfore-01.jpg" alt="logoImage"/>
+        <img  [routerLink]="['/firstArticle']" class="logoImageView ml-4" id="logo" src="./assets/Logos/dfore-01.jpg" alt="logoImage"/>
         <span class="loginButton"> <app-Login></app-Login></span>
       </div>
     </mat-toolbar>
