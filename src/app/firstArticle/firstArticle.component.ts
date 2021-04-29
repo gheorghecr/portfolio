@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstArticleComponent implements OnInit {
 
+  fileNameToDisplay = 'File Name Here';
+  secondaryFileNameToDisplay = 'Secondary File Name Here';
+
   constructor() { }
 
   ngOnInit() {

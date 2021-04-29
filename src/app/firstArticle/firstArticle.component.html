@@ -3,8 +3,8 @@
     <div class="col-9 mb-4">
       <!-- Left side of the content (Document view) -->
       <p-card
-        header="File Info"
-        subheader="File Name in here"
+        header="{{fileNameToDisplay}}"
+        subheader="{{secondaryFileNameToDisplay}}"
         [style]="{ width: '100%' }"
         styleClass="p-card-shadow"
       >
@@ -21,8 +21,8 @@
     <div class="col smallDiv">
       <!-- Right side Of the Content (MetaData/Download/NextPrevious) -->
       <p-card
-        header="File Info"
-        subheader="File Name in here"
+        header="{{fileNameToDisplay}}"
+        subheader="{{secondaryFileNameToDisplay}}"
         [style]="{ width: '250px' }"
         styleClass="p-card-shadow"
       >
