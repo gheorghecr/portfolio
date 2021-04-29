@@ -10,6 +10,15 @@ export class FirstArticleComponent implements OnInit {
   fileNameToDisplay = 'File Name Here';
   secondaryFileNameToDisplay = 'Secondary File Name Here';
 
+  fileMetaData = [
+    { key: 'Created by:', value: 'Gheorghe'},
+    { key: 'Last Modified:', value: '21/02/2021'},
+    { key: 'Created by:', value: 'Gheorghe2'},
+    { key: 'Last Modified:', value: '22/02/2021'},
+    { key: 'Created by:', value: 'Gheorghe3'},
+    { key: 'Last Modified:', value: '23/02/2021'},
+];
+
   constructor() { }
 
   ngOnInit() {

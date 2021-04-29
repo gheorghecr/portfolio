@@ -27,13 +27,8 @@
         styleClass="p-card-shadow"
       >
         <!-- Content of the card -->
-        <ul class="list-group mb-4" style="font-size: 14px">
-          <li class="list-group-item">Created by: Gheorghe</li>
-          <li class="list-group-item">Last Modified: 21/02/2021</li>
-          <li class="list-group-item">Created by: Gheorghe</li>
-          <li class="list-group-item">Last Modified: 21/02/2021</li>
-          <li class="list-group-item">Created by: Gheorghe</li>
-          <li class="list-group-item">Last Modified: 21/02/2021</li>
+        <ul class="list-group mb-4" style="font-size: 14px" >
+          <li class="list-group-item" *ngFor="let field of fileMetaData" >{{field.key}} {{field.value}}</li>
         </ul>
         <p-divider></p-divider>
         <!-- Footer of the card -->
