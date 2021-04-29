@@ -35,6 +35,8 @@ import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import {AvatarModule} from 'primeng/avatar';
+import {AvatarGroupModule} from 'primeng/avatargroup';
 
 
 @NgModule({
@@ -75,6 +77,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     CardModule,
     DividerModule,
     ScrollPanelModule,
+    AvatarModule,
+    AvatarGroupModule,
     RouterModule.forRoot([
       { path: "firstArticle", component: FirstArticleComponent },
       { path: "secondArticle", component: FirstArticleComponent },
