@@ -7,6 +7,11 @@ import { DomSanitizer} from '@angular/platform-browser';
   templateUrl: './firstArticle.component.html',
   styleUrls: ['./firstArticle.component.css'],
 })
+
+/**
+ * Class that has the Document View and Document metaData.
+ * It also allows to download the document. And check the previous and next versions of the document.
+ */
 export class FirstArticleComponent implements OnInit {
   fileNameToDisplay = 'File Name Here';
   secondaryFileNameToDisplay = 'Secondary File Name Here';

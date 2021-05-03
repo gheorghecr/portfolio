@@ -1,6 +1,6 @@
-/* Make it scrollbar when content is bigger the the defined height */
 .pdfContainer {
     height: 1000px;
+    /* Make it scrollbar when content is bigger the the defined height */
     overflow-y: auto;
 }
 
