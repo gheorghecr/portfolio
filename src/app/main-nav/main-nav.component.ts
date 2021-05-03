@@ -8,6 +8,11 @@ import { map, shareReplay } from 'rxjs/operators';
   templateUrl: './main-nav.component.html',
   styleUrls: ['./main-nav.component.css']
 })
+
+/**
+ * This is the component that is responsible for the navigation menu. 
+ * And for the layout for the website. 
+ */
 export class MainNavComponent {
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

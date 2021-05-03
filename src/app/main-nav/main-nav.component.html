@@ -11,6 +11,7 @@
     </mat-toolbar>
 
     <mat-nav-list class="ml-2 mr-4">
+      <!-- Menu Items -->
       <a mat-list-item  [routerLink]="['']">Home</a>
       <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">First Article</a>
       <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Second Article</a>
@@ -27,7 +28,7 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <div class="title" style="width: 2000px;">
-        <!-- <span class="siteName" [routerLink]="['']">Document Software</span> -->
+        <!-- Buttons on the top Bar. Logo and Login Button component -->
         <img  [routerLink]="['/firstArticle']" class="logoImageView ml-4" id="logo" src="./assets/Logos/dfore-01.jpg" alt="logoImage"/>
         <span class="loginButton"> <app-Login></app-Login></span>
       </div>

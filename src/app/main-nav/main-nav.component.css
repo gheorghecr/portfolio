@@ -16,14 +16,15 @@
   z-index: 1;
 }
 
-
+/* Class used on the logo and login button
+*  Will make the login button to be on right and the site name always to the left
+*/
 .title .siteName { float:left }
 .title .loginButton { float:right }
 
 /* Style when the user is at the current page */
 .active-list-item {
   background-color: lightgray !important;
-  /* border-radius: 25px; */
 }
 
 .logoImageView {
