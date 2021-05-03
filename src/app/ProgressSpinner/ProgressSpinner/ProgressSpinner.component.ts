@@ -7,6 +7,12 @@ import { SpinnerData } from './DataForSpinnerView';
   templateUrl: './ProgressSpinner.component.html',
   styleUrls: ['./ProgressSpinner.component.css']
 })
+
+/**
+ * Class that is responsible for the Loading Spinner.
+ * (Loading circle). 
+ * It accepts and titleToPresent (String) - Title to be presented
+ */
 export class ProgressSpinnerComponent implements OnInit {
 
   titleToPresent = '';
