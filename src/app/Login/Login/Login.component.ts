@@ -109,6 +109,7 @@ export class LoginComponent implements OnInit {
       this.dialogRefForProgressSpinner.close(); // close progressSpinnerDialog 
       this.addSuccessMessage();
      }, 2000);
+     this.wordToPresent = "Welcome Gheorghe";
   }
 
 
