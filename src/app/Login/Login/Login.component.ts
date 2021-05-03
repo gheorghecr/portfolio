@@ -12,6 +12,13 @@ import { ProgressSpinnerComponent } from 'src/app/ProgressSpinner/ProgressSpinne
   styleUrls: ['./Login.component.css'],
   providers: [MessageService]
 })
+
+/**
+ * Class that has the login logic. 
+ * It calls the Dialog Login Component which is the Pop Up Dialog with the 
+ * username and password text fields. And when the dialog is closed, actions are executed based 
+ * on how the dialog was closed.
+ */
 export class LoginComponent implements OnInit {
   // Work that will be presented on the top Bar
   wordToPresent = 'Login';
@@ -54,10 +61,10 @@ export class LoginComponent implements OnInit {
       }
       // call login functionality only when login button is pressed
       else if (typeof result == 'object') {
-        console.log(result);
         this.performLogin(result.username, result.password);
       } else {
          // add error message
+
       }
     });
   }
@@ -75,6 +82,13 @@ export class LoginComponent implements OnInit {
    addWarningMessage() {
     this.messageService.add({severity:'warn', summary:'Warning', detail:'Username or Password was left empty!'});
   }
+
+  /**
+   * Adds a pop up message giving user feedback when the does not fill the password of username
+   */
+   addErrorMessage() {
+    this.messageService.add({severity:'error', summary:'Error', detail:'Something went wrong!'});
+  }  
 
   /**
    * Clear any pop up messages
@@ -99,7 +113,8 @@ export class LoginComponent implements OnInit {
 
 
   /**
-   * Open Dialog to allow the user to log in
+   * Open Dialog with the progress spinner indicator.
+   * Loading indicator.
    */
    openDialogProgressSpinner() {
     this.dialogRefForProgressSpinner = this.dialog.open(ProgressSpinnerComponent, {
