@@ -25,18 +25,23 @@
       <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Second Article</a> -->
       <mat-list>
         <!-- Menu Context of Organisation -->
-        <mat-list-item class="menuTitle">
-          A.4 - Context of Organisation
-          <button
-            mat-button
-            mat-icon-button
-            (click)="showSubMenuA4 = !showSubMenuA4"
-          >
-            <mat-icon class="menu-button" [ngClass]="{ rotated: showSubMenuA4 }"
-              >expand_more</mat-icon
+        <div>
+          <mat-list-item class="menuTitle">
+            <button
+              class="buttonToOpenSubMenu"
+              mat-button
+              mat-icon-button
+              (click)="showSubMenuA4 = !showSubMenuA4"
             >
-          </button>
-        </mat-list-item>
+              <mat-icon
+                class="menu-button"
+                [ngClass]="{ rotated: showSubMenuA4 }"
+                >expand_more</mat-icon
+              >
+            </button>
+            A.4 - Context of Organisation
+          </mat-list-item>
+        </div>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA4 }">
           <mat-list-item>A.4.1.1.D - Organisation and Context</mat-list-item>
           <mat-list-item>A.4.2.1.D - Interested Parties</mat-list-item>
@@ -47,7 +52,6 @@
 
         <!-- Menu Leadership-->
         <mat-list-item class="menuTitle">
-          A.5 - Leadership
           <button
             mat-button
             mat-icon-button
@@ -57,6 +61,7 @@
               >expand_more</mat-icon
             >
           </button>
+          A.5 - Leadership
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA5 }">
           <mat-list-item
@@ -69,8 +74,8 @@
         </div>
 
         <!-- Menu Planning-->
+
         <mat-list-item class="menuTitle">
-          A.6 - Planning
           <button
             mat-button
             mat-icon-button
@@ -80,28 +85,39 @@
               >expand_more</mat-icon
             >
           </button>
+          A.6 - Planning
         </mat-list-item>
+
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA6 }">
           <mat-list-item>A.6.1.1.D - Risks and Opportunities</mat-list-item>
           <mat-list-item>A.6.2.1.D - Objectives Energy Targets</mat-list-item>
           <mat-list-item>A.6.2.2.D - Energy Action Plans </mat-list-item>
-          <mat-list-item>A.6.2.3.D - Update of Energy Action Plans</mat-list-item>
+          <mat-list-item
+            >A.6.2.3.D - Update of Energy Action Plans</mat-list-item
+          >
           <mat-list-item>A.6.3.1.D - Energy Review</mat-list-item>
           <mat-list-item>A.6.3.2.E - Energy Audit Reports</mat-list-item>
-          <mat-list-item>A.6.3.3.R - Register of Opportunities (ROOP)</mat-list-item>
+          <mat-list-item
+            >A.6.3.3.R - Register of Opportunities (ROOP)</mat-list-item
+          >
           <mat-list-item>A.6.3.4.R - Energy Review Update</mat-list-item>
           <mat-list-item>A.6.4.1.M - EnPI Methodology </mat-list-item>
           <mat-list-item>A.6.4.2.R - EnPI Review</mat-list-item>
           <mat-list-item>A.6.4.3.D - EnPI Values</mat-list-item>
           <mat-list-item>A.6.5.1.R - Energy Baseline Update</mat-list-item>
-          <mat-list-item>A.6.6.1.M - Data-Collection Plan Methodology</mat-list-item>
-          <mat-list-item>A.6.6.2.M - Data Measurement Plan Methodology</mat-list-item>
-          <mat-list-item>A.6.6.3.R - Data Measurement Plan Review</mat-list-item>
+          <mat-list-item
+            >A.6.6.1.M - Data-Collection Plan Methodology</mat-list-item
+          >
+          <mat-list-item
+            >A.6.6.2.M - Data Measurement Plan Methodology</mat-list-item
+          >
+          <mat-list-item
+            >A.6.6.3.R - Data Measurement Plan Review</mat-list-item
+          >
         </div>
 
         <!-- Menu Support-->
         <mat-list-item class="menuTitle">
-          A.7 - Support
           <button
             mat-button
             mat-icon-button
@@ -111,9 +127,12 @@
               >expand_more</mat-icon
             >
           </button>
+          A.7 - Support
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA7 }">
-          <mat-list-item>A.7.1.1.D - Leadership Roles and Responsibilities</mat-list-item>
+          <mat-list-item
+            >A.7.1.1.D - Leadership Roles and Responsibilities</mat-list-item
+          >
           <mat-list-item>A.7.2.1.D - Competence Needs Analysis</mat-list-item>
           <mat-list-item>A.7.2.2.D - Competence Documentation</mat-list-item>
           <mat-list-item>A.7.2.3.R - Competence Record</mat-list-item>
@@ -122,33 +141,38 @@
           <mat-list-item>A.7.3.3.D - Store E Learning Awareness</mat-list-item>
           <mat-list-item>A.7.3.4.R - AEU Awareness Records</mat-list-item>
           <mat-list-item>A.7.4.1.M - Communication Methodology</mat-list-item>
-          <mat-list-item>A.7.4.2.M - Employee Suggestions Methodology</mat-list-item>
+          <mat-list-item
+            >A.7.4.2.M - Employee Suggestions Methodology</mat-list-item
+          >
           <mat-list-item>A.7.4.3.R - Employee-Suggestions Record</mat-list-item>
         </div>
 
         <!-- Menu Documented Information-->
         <mat-list-item class="menuTitle">
-          A.7.5 - Documented Information
           <button
             mat-button
             mat-icon-button
             (click)="showSubMenuA75 = !showSubMenuA75"
           >
-            <mat-icon class="menu-button" [ngClass]="{ rotated: showSubMenuA75 }"
+            <mat-icon
+              class="menu-button"
+              [ngClass]="{ rotated: showSubMenuA75 }"
               >expand_more</mat-icon
             >
           </button>
+          A.7.5 - Documented Information
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA75 }">
           <mat-list-item>A.7.5.1.D - Article Register</mat-list-item>
           <mat-list-item>A.7.5.2.1.M - Document Methodology</mat-list-item>
           <mat-list-item>A.7.5.2.2.R - Document Change Record</mat-list-item>
-          <mat-list-item>A.7.5.3.R - Document Control Methodology</mat-list-item>
+          <mat-list-item
+            >A.7.5.3.R - Document Control Methodology</mat-list-item
+          >
         </div>
 
         <!-- Menu Operation-->
         <mat-list-item class="menuTitle">
-          A.8 - Operation
           <button
             mat-button
             mat-icon-button
@@ -158,25 +182,34 @@
               >expand_more</mat-icon
             >
           </button>
+          A.8 - Operation
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA8 }">
-          <mat-list-item>A.8.1.1.M - Operational Control and Maintenance Methodology</mat-list-item>
+          <mat-list-item
+            >A.8.1.1.M - Operational Control and Maintenance
+            Methodology</mat-list-item
+          >
           <mat-list-item>A.8.1.2.P - Store Operating Procedures</mat-list-item>
           <mat-list-item>A.8.1.3.P - Maintenance Procedures</mat-list-item>
-          <mat-list-item>A.8.1.4.E - Evidence Control of Processes</mat-list-item>
+          <mat-list-item
+            >A.8.1.4.E - Evidence Control of Processes</mat-list-item
+          >
           <mat-list-item>A.8.2.1.M - Design Methodology</mat-list-item>
           <mat-list-item>A.8.2.2.R - Design Record</mat-list-item>
           <mat-list-item>A.8.2.3.D - Designer Commitment</mat-list-item>
           <mat-list-item>A.8.2.4.R - Designer Commitment Record</mat-list-item>
           <mat-list-item>A.8.3.1.D - Supplier Commitment</mat-list-item>
           <mat-list-item>A.8.3.2.R - Supplier Commitment Record</mat-list-item>
-          <mat-list-item>A.8.3.3.P - Procurement Assessment Criteria</mat-list-item>
-          <mat-list-item>A.8.3.4.R - Procurement Criteria Application Record</mat-list-item>
+          <mat-list-item
+            >A.8.3.3.P - Procurement Assessment Criteria</mat-list-item
+          >
+          <mat-list-item
+            >A.8.3.4.R - Procurement Criteria Application Record</mat-list-item
+          >
         </div>
 
         <!-- Menu Performance evaluation-->
         <mat-list-item class="menuTitle">
-          A.9 - Performance evaluation
           <button
             mat-button
             mat-icon-button
@@ -186,9 +219,12 @@
               >expand_more</mat-icon
             >
           </button>
+          A.9 - Performance evaluation
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA9 }">
-          <mat-list-item>A.9.1.1.1.M - Energy Monitoring Methodology</mat-list-item>
+          <mat-list-item
+            >A.9.1.1.1.M - Energy Monitoring Methodology</mat-list-item
+          >
           <mat-list-item>A.9.1.1.2.R - Site Electricity Reports</mat-list-item>
           <mat-list-item>A.9.1.1.3.P - ERICC Operating Manual</mat-list-item>
           <mat-list-item>A.9.1.1.4.R - Technical Bureau Alerts</mat-list-item>
@@ -197,31 +233,40 @@
           <mat-list-item>A.9.2.2.D - Internal Audit Template</mat-list-item>
           <mat-list-item>A.9.2.3.R - Internal Audit Record</mat-list-item>
           <mat-list-item>A.9.2.4.R - Internal Audit Observations</mat-list-item>
-          <mat-list-item>A.9.3.1.M - Management Review Methodology</mat-list-item>
-          <mat-list-item>A.9.3.2.R - Management Review Input Record</mat-list-item>
-          <mat-list-item>A.9.3.3.R - Management Review Output Record</mat-list-item>
+          <mat-list-item
+            >A.9.3.1.M - Management Review Methodology</mat-list-item
+          >
+          <mat-list-item
+            >A.9.3.2.R - Management Review Input Record</mat-list-item
+          >
+          <mat-list-item
+            >A.9.3.3.R - Management Review Output Record</mat-list-item
+          >
         </div>
 
         <!-- Menu Improvement-->
         <mat-list-item class="menuTitle">
-          A.10 - Improvement
           <button
             mat-button
             mat-icon-button
             (click)="showSubMenuA10 = !showSubMenuA10"
           >
-            <mat-icon class="menu-button" [ngClass]="{ rotated: showSubMenuA10 }"
+            <mat-icon
+              class="menu-button"
+              [ngClass]="{ rotated: showSubMenuA10 }"
               >expand_more</mat-icon
             >
           </button>
+          A.10 - Improvement
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA10 }">
           <mat-list-item>A.10.1.1.M - Nonconformity Methodology</mat-list-item>
-          <mat-list-item>A.10.1.2.R - Correction Action Request (CAR)</mat-list-item>
+          <mat-list-item
+            >A.10.1.2.R - Correction Action Request (CAR)</mat-list-item
+          >
           <mat-list-item>A.10.1.3.D - Nonconformity Review</mat-list-item>
           <mat-list-item>A.10.2 - Continual Improvement</mat-list-item>
         </div>
-
       </mat-list>
     </mat-nav-list>
   </mat-sidenav>
