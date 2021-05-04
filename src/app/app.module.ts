@@ -35,8 +35,8 @@ import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
-import {AvatarModule} from 'primeng/avatar';
-import {AvatarGroupModule} from 'primeng/avatargroup';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @NgModule({
   declarations: [	
@@ -79,8 +79,8 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
     AvatarModule,
     AvatarGroupModule,
     RouterModule.forRoot([
+      { path: "firstArticle/:id", component: FirstArticleComponent },
       { path: "firstArticle", component: FirstArticleComponent },
-      { path: "secondArticle", component: FirstArticleComponent },
     ]),
   ],
   providers: [],
