@@ -42,9 +42,9 @@
           </mat-list-item>
         </div>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA4 }">
-          <mat-list-item>A.4.1.1.D - Organisation and Context</mat-list-item>
-          <mat-list-item>A.4.2.1.D - Interested Parties</mat-list-item>
-          <mat-list-item>A.4.2.2.D - Legal Requirements</mat-list-item>
+          <mat-list-item [routerLink]="['/firstArticle']">A.4.1.1.D - Organisation and Context</mat-list-item>
+          <mat-list-item [routerLink]="['/firstArticle', '2']">A.4.2.1.D - Interested Parties</mat-list-item>
+          <mat-list-item [routerLink]="['/firstArticle', '3']">A.4.2.2.D - Legal Requirements</mat-list-item>
           <mat-list-item>A.4.3.1.D - Scope and Boundaries</mat-list-item>
           <mat-list-item>A.4.4.1.D - EnMS Manual</mat-list-item>
         </div>
