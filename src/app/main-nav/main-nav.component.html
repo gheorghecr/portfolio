@@ -12,9 +12,34 @@
 
     <mat-nav-list class="ml-2 mr-4">
       <!-- Menu Items -->
-      <a mat-list-item  [routerLink]="['']">Home</a>
+      <!-- <a mat-list-item  [routerLink]="['']">Home</a>
       <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">First Article</a>
-      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Second Article</a>
+      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Second Article</a> -->
+      <mat-list>
+        <mat-list-item>
+          Parent Menu
+          <button mat-button mat-icon-button (click)="showSubmenu = !showSubmenu">
+            <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}">expand_more</mat-icon>
+          </button>
+        </mat-list-item>
+        <div class="submenu" [ngClass]="{'expanded' : showSubmenu}">
+          <mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']" >Submenu Item 1</mat-list-item>
+          <mat-list-item>Submenu Item 2</mat-list-item>
+          <mat-list-item>Submenu Item 3</mat-list-item>
+        </div>
+
+        <mat-list-item>
+          Parent Menu
+          <button mat-button mat-icon-button (click)="showSubmenu2 = !showSubmenu2">
+            <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu2}">expand_more</mat-icon>
+          </button>
+        </mat-list-item>
+        <div class="submenu" [ngClass]="{'expanded' : showSubmenu2}">
+          <mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">Submenu Item 1</mat-list-item>
+          <mat-list-item>Submenu Item 2</mat-list-item>
+          <mat-list-item>Submenu Item 3</mat-list-item>
+        </div>
+      </mat-list>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

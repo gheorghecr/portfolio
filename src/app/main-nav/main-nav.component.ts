@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -14,6 +14,9 @@ import { map, shareReplay } from 'rxjs/operators';
  * And for the layout for the website. 
  */
 export class MainNavComponent {
+  
+  showSubmenu: boolean = false;
+  showSubmenu2: boolean = false;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
