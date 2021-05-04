@@ -33,7 +33,6 @@
   border-radius: 10px;
 }
 
-
 .menu-button {
   transition: 300ms ease-in-out;
   transform: rotate(0deg);
@@ -50,3 +49,13 @@
   height: auto;
   padding-left: 10px;
 }
+
+.menuTitle {
+  font-weight: bold;
+  
+}
+
+.buttonToOpenSubMenu{
+  align-content: space-between;
+}
+
