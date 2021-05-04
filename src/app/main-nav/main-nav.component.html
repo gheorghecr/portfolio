@@ -8,17 +8,18 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar color="primary"
-      >Menu
+      >
+      <div class="ml-4">Menu</div>
       <img
         [routerLink]="['/firstArticle']"
-        class="logoImageView ml-4"
+        class="logoImageView ml-2"
         id="logo"
         src="./assets/Logos/dfore-01.jpg"
         alt="logoImage"
       />
     </mat-toolbar>
 
-    <mat-nav-list class="ml-2 mr-4">
+    <mat-nav-list class="mr-6">
       <!-- Menu Items -->
       <!-- <a mat-list-item  [routerLink]="['']">Home</a>
       <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">First Article</a>
@@ -178,7 +179,7 @@
           A.8 - Operation
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA8 }">
-          <mat-list-item
+          <mat-list-item class="mt-2 mb-2"
             >A.8.1.1.M - Operational Control and Maintenance
             Methodology</mat-list-item
           >
@@ -251,7 +252,7 @@
           A.10 - Improvement
         </mat-list-item>
         <div class="submenu" [ngClass]="{ expanded: showSubMenuA10 }">
-          <mat-list-item>A.10.1.1.M - Nonconformity Methodology</mat-list-item>
+          <mat-list-item class="mt-2 mb-2">A.10.1.1.M - Nonconformity Methodology</mat-list-item>
           <mat-list-item
             >A.10.1.2.R - Correction Action Request (CAR)</mat-list-item
           >
