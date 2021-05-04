@@ -45,6 +45,7 @@ export class FirstArticleComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.secondaryFileNameToDisplay = this._Activatedroute.snapshot.paramMap.get('id') || '123';
     console.log(this._Activatedroute.snapshot.paramMap.get('id'));
   }
 
