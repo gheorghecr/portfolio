@@ -15,8 +15,14 @@ import { map, shareReplay } from 'rxjs/operators';
  */
 export class MainNavComponent {
   
-  showSubmenu: boolean = false;
-  showSubmenu2: boolean = false;
+  showSubMenuA4: boolean = false;
+  showSubMenuA5: boolean = false;
+  showSubMenuA6: boolean = false;
+  showSubMenuA7: boolean = false;
+  showSubMenuA75: boolean = false;
+  showSubMenuA8: boolean = false;
+  showSubMenuA9: boolean = false;
+  showSubMenuA10: boolean = false;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
