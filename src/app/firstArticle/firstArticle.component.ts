@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SafeResourceUrl } from '@angular/platform-browser';
-import { DomSanitizer} from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-firstArticle',
@@ -30,11 +31,21 @@ export class FirstArticleComponent implements OnInit {
 
   urlFileToPresent: SafeResourceUrl;
 
-  constructor(sanitizer: DomSanitizer) {
-    this.urlFileToPresent = sanitizer.bypassSecurityTrustResourceUrl(this.pdfFileNameToPresent);
+  constructor(
+    sanitizer: DomSanitizer,
+    private _Activatedroute: ActivatedRoute,
+    private router: Router
+  ) {
+    this.urlFileToPresent = sanitizer.bypassSecurityTrustResourceUrl(
+      this.pdfFileNameToPresent
+    );
+    this.router.routeReuseStrategy.shouldReuseRoute = function () {
+      return false;
+    };
   }
 
   ngOnInit() {
+    console.log(this._Activatedroute.snapshot.paramMap.get('id'));
   }
 
   /**
