@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 350px;
+  width: 250px;
 }
 
 .sidenav .mat-toolbar {
@@ -16,55 +16,19 @@
   z-index: 1;
 }
 
-/* Class used on the logo and login button
-*  Will make the login button to be on right and the site name always to the left
-*/
-.title .siteName { float:left }
-.title .loginButton { float:right }
-
 /* Style when the user is at the current page */
 .active-list-item {
   background-color: lightgray !important;
 }
 
-.logoImageView {
-  width: 100px;
-  height: auto;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.logoContainer {
-  height: 40px;
-  margin-left: 40%;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.menu-button {
-  transition: 300ms ease-in-out;
-  transform: rotate(0deg);
-}
-.menu-button.rotated {
-  transform: rotate(180deg);
-}
-.submenu {
-  overflow-y: hidden;
-  transition: 300ms ease-in-out;
-  height: 0;
-}
-.submenu.expanded {
-  height: auto;
-  padding-left: 40px;
-}
-
 .menuTitle {
   font-weight: bold;
-  
 }
 
-.buttonToOpenSubMenu{
-  align-content: space-between;
+.menuTitle:hover {
+  color: rgb(64, 83, 175);
 }
+
+
 
 

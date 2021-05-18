@@ -11,12 +11,12 @@
       <div class="ml-4">Menu</div>
     </mat-toolbar>
 
-    <mat-nav-list class="mr-6">
+    <mat-nav-list class="mr-2">
       <!-- Menu Items -->
-      <a mat-list-item  [routerLink]="['']">Home</a>
-      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">PROJECTS</a>
-      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">ABOUT ME</a>
-      <a mat-list-item routerLinkActive="active-list-item" [routerLink]="['/secondArticle']">CONTACT</a>
+      <a mat-list-item class="menuTitle" [routerLink]="['']" >HOME</a>
+      <a mat-list-item class="menuTitle" routerLinkActive="active-list-item" [routerLink]="['/firstArticle']">PROJECTS</a>
+      <a mat-list-item class="menuTitle" routerLinkActive="active-list-item" >ABOUT ME</a>
+      <a mat-list-item class="menuTitle"routerLinkActive="active-list-item" >CONTACT</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
