@@ -1,10 +1,33 @@
 img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 .center {
-    margin: auto;
-    width: 20%;
-  }
+  margin: auto;
+  width: 20%;
+}
+
+.centerForTitle {
+  margin: auto;
+  width: 30%;
+  padding-top: 50px;
+}
+
+.titleText {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.divForIntro {
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.textForIntro {
+  font-size: 150%;
+  line-height: 1.4;
+}
