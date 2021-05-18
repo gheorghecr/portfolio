@@ -75,7 +75,6 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     AvatarModule,
     AvatarGroupModule,
     RouterModule.forRoot([
-      { path: "firstArticle/:id", component: FirstArticleComponent },
       { path: "firstArticle", component: FirstArticleComponent },
     ]),
   ],
