@@ -18,6 +18,7 @@ img {
 .titleText {
   font-size: 200%;
   font-weight: bold;
+  line-height: 1.4;
 }
 
 .divForIntro {
