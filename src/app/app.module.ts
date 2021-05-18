@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import { LoginComponent } from './Login/Login/Login.component';
-import { DialogContentComponent } from './Login/DialogContent/DialogContent.component';
 import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
 import { FirstArticleComponent } from './firstArticle/firstArticle.component';
 
@@ -42,8 +40,6 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
   declarations: [	
     AppComponent,
     MainNavComponent,
-    LoginComponent,
-    DialogContentComponent,
     ProgressSpinnerComponent,
     FirstArticleComponent
    ],
