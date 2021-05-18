@@ -6,6 +6,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
 import { FirstArticleComponent } from './firstArticle/firstArticle.component';
 import { HeaderComponent } from './header/header/header.component';
+import { LinkButtonsComponent } from './linkButtons/linkButtons/linkButtons.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, }  from '@angular/material/button';
@@ -43,7 +44,8 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     MainNavComponent,
     ProgressSpinnerComponent,
     FirstArticleComponent,
-    HeaderComponent
+    HeaderComponent,
+    LinkButtonsComponent
    ],
   imports: [
     BrowserModule,
