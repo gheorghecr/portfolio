@@ -12,12 +12,12 @@ img {
 
 .centerForTitle {
   margin: auto;
-  width: 500px;
+  width: 800px;
   padding-top: 50px;
 }
 
 .titleText {
-  font-size: 300%;
+  font-size: 400%;
   font-weight: bold;
   line-height: 1.4;
   text-align: center;
