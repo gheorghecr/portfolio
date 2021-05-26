@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
-import { FirstArticleComponent } from './firstArticle/firstArticle.component';
 import { HeaderComponent } from './header/header/header.component';
 import { LinkButtonsComponent } from './linkButtons/linkButtons/linkButtons.component';
 
@@ -37,13 +36,14 @@ import { DividerModule } from 'primeng/divider';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
+import { ProjectsComponent } from './projects/projects/projects.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
     MainNavComponent,
     ProgressSpinnerComponent,
-    FirstArticleComponent,
+    ProjectsComponent,
     HeaderComponent,
     LinkButtonsComponent
    ],
@@ -79,7 +79,7 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
     AvatarModule,
     AvatarGroupModule,
     RouterModule.forRoot([
-      { path: "firstArticle", component: FirstArticleComponent },
+      { path: "home", component: AppComponent },
     ]),
   ],
   providers: [],
