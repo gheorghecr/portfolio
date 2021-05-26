@@ -17,15 +17,16 @@
       <div [@slideLeftToRight]>
         <!-- Container with info -->
         <div class="titleOfProject mt-2">{{ project.title }}</div>
-        <div class="mt-4">{{ project.subtitle }}</div>
+        <div class="mt-4">{{ project.description }}</div>
         <div class="mt-4">{{ project.technologies }}</div>
         <a class="btn btn-xs btn-outline-dark mt-4">See More</a>
       </div>
 
-      <div [@slideRightToLeft]>
+      <div [@slideRightToLeft] class="mt-4">
         <!-- Container with image -->
-        <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" />
+        <img src="{{project.thumbnailImagePath}}" alt="econ_Calendar" />
       </div>
+      <div class="mb-4"></div>
     </div>
   </ng-template>
 
@@ -34,13 +35,13 @@
     <div class="flex-container">
       <div [@slideLeftToRight]>
         <!-- Container with image -->
-        <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" />
+        <img src="{{project.thumbnailImagePath}}" alt="econ_Calendar" />
       </div>
 
       <div [@slideRightToLeft]>
         <!-- Container with info -->
         <div class="titleOfProject mt-2">{{ project.title }}</div>
-        <div class="mt-4">{{ project.subtitle }}</div>
+        <div class="mt-4">{{ project.description }}</div>
         <div class="mt-4">{{ project.technologies }}</div>
         <a class="btn btn-xs btn-outline-dark mt-4">See More</a>
       </div>
