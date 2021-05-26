@@ -14,7 +14,7 @@
   <!-- Design with the text first -->
   <ng-template #textFirstDiv>
     <div class="flex-container">
-      <div [@slideLeftToRight]>
+      <div [@slideLeftToRight] class="mr-4">
         <!-- Container with info -->
         <div class="titleOfProject mt-2">{{ project.title }}</div>
         <div class="mt-4">{{ project.description }}</div>
@@ -38,7 +38,7 @@
         <img src="{{project.thumbnailImagePath}}" alt="econ_Calendar" />
       </div>
 
-      <div [@slideRightToLeft]>
+      <div [@slideRightToLeft] class="ml-4">
         <!-- Container with info -->
         <div class="titleOfProject mt-2">{{ project.title }}</div>
         <div class="mt-4">{{ project.description }}</div>
