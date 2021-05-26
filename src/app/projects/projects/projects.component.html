@@ -32,12 +32,12 @@
   <!-- Design with the image first -->
   <ng-template #imageFirstDiv>
     <div class="flex-container">
-      <div [@slideRightToLeft]>
+      <div [@slideLeftToRight]>
         <!-- Container with image -->
         <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" />
       </div>
 
-      <div [@slideLeftToRight]>
+      <div [@slideRightToLeft]>
         <!-- Container with info -->
         <div class="titleOfProject">{{ project.title }}</div>
         <div>{{ project.subtitle }}</div>
