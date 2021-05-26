@@ -7,7 +7,7 @@
 }
 
 .sidenav .mat-toolbar {
-  background: primary;
+  background-color: rgb(46, 62, 80);
 }
 
 .mat-toolbar.mat-primary {
@@ -29,6 +29,13 @@
   color: rgb(64, 83, 175);
 }
 
+.changeCursorToPointer {
+  cursor: pointer;
+  color: white;
+}
 
+.colorForMainNav {
+  background-color: rgb(46, 62, 80);
+}
 
 

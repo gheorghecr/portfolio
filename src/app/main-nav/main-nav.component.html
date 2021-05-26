@@ -20,7 +20,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="colorForMainNav">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -30,7 +30,7 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <div class="ml-4">GHEORGHE CRACIUN</div>
+      <div class="ml-4 changeCursorToPointer" [routerLink]="['']" >GHEORGHE CRACIUN</div>
     </mat-toolbar>
     <!-- Add Content Here -->
     <ng-content></ng-content>
