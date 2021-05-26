@@ -6,19 +6,21 @@ img {
 
 .center {
   margin: auto;
-  width: 20%;
+  width: 200px;
+  align-items: center ;
 }
 
 .centerForTitle {
   margin: auto;
-  width: 30%;
+  width: 500px;
   padding-top: 50px;
 }
 
 .titleText {
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bold;
   line-height: 1.4;
+  text-align: center;
 }
 
 .divForIntro {
