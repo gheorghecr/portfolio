@@ -2,21 +2,50 @@
 <div class="centerForTitle">
   <div class="titleText">SOFTWARE DEVELOPER</div>
 </div>
-<div class="customDivider"></div>
-<div  *ngFor="let project of projects">
-  <div class="flex-container" >
-    <div [@slideLeftToRight]>
-      <!-- Container with info -->
-      <div class="titleOfProject">{{ project.title }}</div>
-      <div>{{ project.subtitle }}</div>
-      <div>{{ project.technologies }}</div>
-      <a class="btn btn-xs btn-outline-dark">See More</a>
-    </div>
 
-    <div [@slideRightToLeft]>
-      <!-- Container with image -->
-      <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" >
+<div class="customDivider"></div>
+
+<!-- Run trough all projects from the list -->
+<div *ngFor="let project of projects">
+  <!-- There are 2 designs, one with the text first and another with the image first
+  So based on the project.id will decide which design to present for the project div -->
+  <div *ngIf="project.id % 2 == 0; then textFirstDiv; else imageFirstDiv"></div>
+
+  <!-- Design with the text first -->
+  <ng-template #textFirstDiv>
+    <div class="flex-container">
+      <div [@slideLeftToRight]>
+        <!-- Container with info -->
+        <div class="titleOfProject">{{ project.title }}</div>
+        <div>{{ project.subtitle }}</div>
+        <div>{{ project.technologies }}</div>
+        <a class="btn btn-xs btn-outline-dark">See More</a>
+      </div>
+
+      <div [@slideRightToLeft]>
+        <!-- Container with image -->
+        <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" />
+      </div>
     </div>
-  </div>
+  </ng-template>
+
+  <!-- Design with the image first -->
+  <ng-template #imageFirstDiv>
+    <div class="flex-container">
+      <div [@slideRightToLeft]>
+        <!-- Container with image -->
+        <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" />
+      </div>
+
+      <div [@slideLeftToRight]>
+        <!-- Container with info -->
+        <div class="titleOfProject">{{ project.title }}</div>
+        <div>{{ project.subtitle }}</div>
+        <div>{{ project.technologies }}</div>
+        <a class="btn btn-xs btn-outline-dark">See More</a>
+      </div>
+    </div>
+  </ng-template>
+
   <div class="customDivider"></div>
 </div>
