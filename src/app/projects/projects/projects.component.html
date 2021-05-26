@@ -4,8 +4,8 @@
 </div>
 <div class="customDivider"></div>
 <div  *ngFor="let project of projects">
-  <div class="flex-container">
-    <div>
+  <div class="flex-container" >
+    <div [@slideLeftToRight]>
       <!-- Container with info -->
       <div class="titleOfProject">{{ project.title }}</div>
       <div>{{ project.subtitle }}</div>
@@ -13,7 +13,7 @@
       <a class="btn btn-xs btn-outline-dark">See More</a>
     </div>
 
-    <div >
+    <div [@slideRightToLeft]>
       <!-- Container with image -->
       <img src="./assets/images/econ_Calendar.png" alt="econ_Calendar" >
     </div>
