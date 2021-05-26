@@ -10,6 +10,12 @@ img {
   align-items: center ;
 }
 
+.centerForIntro {
+  margin: auto;
+  max-width: 1500px;
+  align-items: center ;
+}
+
 .centerForTitle {
   margin: auto;
   width: 800px;
@@ -28,9 +34,11 @@ img {
   padding-left: 100px;
   padding-right: 100px;
   text-align: center;
+  
 }
 
 .textForIntro {
   font-size: 150%;
   line-height: 1.4;
+  max-width: 1200px;
 }
