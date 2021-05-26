@@ -13,10 +13,9 @@
 
 .flex-container {
   align-items: center;
-  
   margin-left: 10%;
   margin-right: 10%;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   background-color: DodgerBlue;
@@ -24,7 +23,7 @@
 
 .flex-container > div {
   background-color: #f1f1f1;
-  width: 600px;
+  width: 500px;
   margin: 10px;
   text-align: left;
   line-height: 75px;
@@ -41,8 +40,3 @@
   height: 60px;
 }
 
-.centerForProjectsDiv {
-  margin: auto;
-  width: 1600px;
-  align-items: center ;
-}
