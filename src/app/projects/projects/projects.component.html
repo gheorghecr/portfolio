@@ -1,3 +1,22 @@
-<p>
-  projects works!
-</p>
+<div class="customDivider"></div>
+<div class="centerForTitle">
+  <div class="titleText">SOFTWARE DEVELOPER</div>
+</div>
+<div class="customDivider"></div>
+<div class="centerForProjectsDiv" *ngFor="let project of projects">
+  <div class="flex-container">
+    <div>
+      <!-- Container with info -->
+      <div class="titleOfProject">{{ project.title }}</div>
+      <div>{{ project.subtitle }}</div>
+      <div>{{ project.technologies }}</div>
+      <a class="btn btn-xs btn-outline-dark">See More</a>
+    </div>
+
+    <div>
+      <!-- Container with image -->
+      {{ project.title }}
+    </div>
+  </div>
+  <div class="customDivider"></div>
+</div>

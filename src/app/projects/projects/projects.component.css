@@ -1,0 +1,48 @@
+.centerForTitle {
+  margin: auto;
+  width: 500px;
+  padding-top: 50px;
+}
+.titleText {
+  font-size: 250%;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(44, 62, 80);
+}
+
+.flex-container {
+  align-items: center;
+  
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 600px;
+  margin: 10px;
+  text-align: left;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+.titleOfProject {
+  color: rgb(44, 143, 119);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.customDivider {
+  height: 60px;
+}
+
+.centerForProjectsDiv {
+  margin: auto;
+  width: 1600px;
+  align-items: center ;
+}
