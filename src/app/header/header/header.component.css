@@ -27,6 +27,7 @@ img {
   font-weight: bold;
   line-height: 1.4;
   text-align: center;
+  font-family: 'Montserrat'
 }
 
 .divForIntro {
@@ -34,11 +35,12 @@ img {
   padding-left: 100px;
   padding-right: 100px;
   text-align: center;
-  
+  font-family: 'Montserrat'
 }
 
 .textForIntro {
   font-size: 150%;
   line-height: 1.4;
   max-width: 1200px;
+  font-family: 'Montserrat'
 }

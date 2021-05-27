@@ -29,6 +29,7 @@
     line-height: 1.4;
     text-align: center;
     color: white;
+    font-family: 'Montserrat'
   }
 
   .parentDiv {
@@ -38,6 +39,7 @@
   .sectionTitle {
       font-weight: bold;
       font-size: larger;
+      font-family: 'Montserrat'
   }
 
 .matListItems {
