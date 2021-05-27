@@ -37,6 +37,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ProjectsComponent } from './projects/projects/projects.component';
+import { InterestsComponent } from './Interests/interests/interests.component';
 
 @NgModule({
   declarations: [	
@@ -45,7 +46,8 @@ import { ProjectsComponent } from './projects/projects/projects.component';
     ProgressSpinnerComponent,
     ProjectsComponent,
     HeaderComponent,
-    LinkButtonsComponent
+    LinkButtonsComponent,
+    InterestsComponent
    ],
   imports: [
     BrowserModule,
