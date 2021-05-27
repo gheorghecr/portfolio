@@ -1,4 +1,5 @@
 img {
+  margin-top: 50px;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -19,7 +20,15 @@ img {
 .centerForTitle {
   margin: auto;
   max-width: 800px;
+  font-size: 10px;
+  color: grey;
+}
+
+.centerForPersonalName {
+  margin: auto;
+  max-width: 800px;
   padding-top: 50px;
+  font-size: medium;
 }
 
 .titleText {
