@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
 import { HeaderComponent } from './header/header/header.component';
 import { LinkButtonsComponent } from './linkButtons/linkButtons/linkButtons.component';
@@ -43,7 +42,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [	
     AppComponent,
-    MainNavComponent,
     ProgressSpinnerComponent,
     ProjectsComponent,
     HeaderComponent,
@@ -83,7 +81,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AvatarGroupModule,
     FontAwesomeModule,
     RouterModule.forRoot([
-      { path: "home", component: MainNavComponent },
+      { path: "home", component: AppComponent },
     ]),
   ],
   providers: [],
