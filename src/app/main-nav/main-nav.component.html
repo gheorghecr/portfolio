@@ -8,13 +8,13 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar color="primary">
-      <div class="ml-4">Menu</div>
+      <div class="ml-4 menuTitle">Menu</div>
     </mat-toolbar>
 
     <mat-nav-list class="mr-2">
       <!-- Menu Items -->
-      <a mat-list-item class="menuTitle" [routerLink]="['/home']" >HOME</a>
-      <a mat-list-item class="menuTitle" routerLinkActive="active-list-item" [routerLink]="['/home']">MY RESUME</a>
+      <a mat-list-item class="menuTitle"  >HOME</a>
+      <a mat-list-item class="menuTitle" routerLinkActive="active-list-item" [routerLink]="['']">MY RESUME</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -29,7 +29,7 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <div class="ml-4 changeCursorToPointer" [routerLink]="['/home']" >GHEORGHE CRACIUN</div>
+      <div class="ml-4 changeCursorToPointer menuTitle" [routerLink]="['/home']" >GHEORGHE CRACIUN</div>
     </mat-toolbar>
     <!-- Add Content Here -->
     <ng-content></ng-content>

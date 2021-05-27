@@ -25,6 +25,7 @@
 .menuTitle {
   font-weight: bold;
   color: white;
+  font-family: 'Montserrat';
 }
 
 .menuTitle:hover {
@@ -42,6 +43,10 @@
 
 .burgerMenuIcon {
   color: white;
+}
+
+.menuTitle {
+  font-family: 'Montserrat';
 }
 
 
