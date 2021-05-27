@@ -9,7 +9,7 @@
   line-height: 1.4;
   text-align: center;
   color: rgb(44, 62, 80);
-  font-family: 'Montserrat'
+  font-family: "Montserrat";
 }
 
 .flex-container {
@@ -36,7 +36,7 @@
   color: rgb(26, 188, 156);
   font-weight: bold;
   font-size: 30px;
-  font-family: 'Montserrat'
+  font-family: "Montserrat";
 }
 
 .customDivider {
@@ -45,6 +45,9 @@
 
 img {
   width: 100%;
-    height: auto;
+  height: auto;
 }
 
+.projectText {
+  font-family: "Montserrat";
+}
