@@ -38,6 +38,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ProjectsComponent } from './projects/projects/projects.component';
 import { InterestsComponent } from './Interests/interests/interests.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [	
@@ -80,6 +81,7 @@ import { InterestsComponent } from './Interests/interests/interests.component';
     ScrollPanelModule,
     AvatarModule,
     AvatarGroupModule,
+    FontAwesomeModule,
     RouterModule.forRoot([
       { path: "home", component: AppComponent },
     ]),
