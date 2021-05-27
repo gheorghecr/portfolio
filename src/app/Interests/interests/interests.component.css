@@ -1,0 +1,32 @@
+.flex-container {
+    align-items: center;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1; 
+    max-width: 500px;
+    /* margin: 10px; */
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .centerForTitle {
+    margin: auto;
+    width: 500px;
+    padding-top: 50px;
+  }
+  .titleText {
+    font-size: 250%;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(44, 62, 80);
+  }
