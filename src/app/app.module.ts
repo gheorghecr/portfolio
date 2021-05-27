@@ -39,7 +39,6 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ProjectsComponent } from './projects/projects/projects.component';
 import { InterestsComponent } from './Interests/interests/interests.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MainPageComponent } from './mainPage/mainPage/mainPage.component';
 
 @NgModule({
   declarations: [	
@@ -50,7 +49,6 @@ import { MainPageComponent } from './mainPage/mainPage/mainPage.component';
     HeaderComponent,
     LinkButtonsComponent,
     InterestsComponent,
-    MainPageComponent
    ],
   imports: [
     BrowserModule,
@@ -85,7 +83,7 @@ import { MainPageComponent } from './mainPage/mainPage/mainPage.component';
     AvatarGroupModule,
     FontAwesomeModule,
     RouterModule.forRoot([
-      { path: "home", component: MainPageComponent },
+      { path: "home", component: MainNavComponent },
     ]),
   ],
   providers: [],
