@@ -1,20 +1,24 @@
-<h2 mat-dialog-title class="mt-2">Login</h2>
-    <mat-dialog-content style="height: 120px;" class="mat-typography">
-      <p>
-       
-      </p>
+<h2 mat-dialog-title class="mt-2 mb-4 titleOfProject">{{ data.title }}</h2>
 
-      <p>
-        
-      </p>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end" class="mb-2">
-      <button mat-button mat-dialog-close>Cancel</button>
-      <button
-        mat-flat-button
-        color="primary"
-        [mat-dialog-close]="data"
-        cdkFocusInitial
-      >
-        Login
-      </button>
+<div class="container">
+  <div class="row">
+    <div class="col-lg">
+      <div class="row"> 
+        {{ data.technologies }}
+      </div>
+      <div class="row"> 
+        {{ data.about }}
+      </div>
+    </div>
+    <div class="col-lg">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+
+<mat-dialog-content style="height: 120px" class="mat-typography">
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="mb-2">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
