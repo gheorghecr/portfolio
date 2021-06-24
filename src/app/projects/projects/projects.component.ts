@@ -1,12 +1,15 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { projects, Projects } from './projectsList/projects';
-
+import { MessageService, PrimeNGConfig } from 'primeng/api';
 import { trigger, transition, animate, style } from '@angular/animations'
+import { MatDialog } from '@angular/material/dialog';
+import { ProjectDetailsDialogComponent } from 'src/app/ProjectDetailsDialog/projectDetailsDialog/projectDetailsDialog.component';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  providers: [MessageService],
   animations: [
     trigger('slideLeftToRight', [
       transition(':enter', [
@@ -29,11 +32,27 @@ import { trigger, transition, animate, style } from '@angular/animations'
 export class ProjectsComponent implements OnInit {
   projects: Projects[] = [];
 
-  constructor() {
+  constructor(
+    public dialog: MatDialog,
+    private messageService: MessageService,
+    private primengConfig: PrimeNGConfig,
+  ) {
     this.projects = projects;
    }
 
   ngOnInit() {
+    this.primengConfig.ripple = true;
   }
 
+  /**
+   * Open Dialog with project details
+   */
+   openProjectDetailsDialog( projectID: Number) {
+    this.dialog.open(ProjectDetailsDialogComponent, {
+      maxWidth: '85%',
+      minWidth: '80%',
+      maxHeight: '90%',
+      data: { username: '', password: '', registerPassword: '' },
+    });
+  }
 }
