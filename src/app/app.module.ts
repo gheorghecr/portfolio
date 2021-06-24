@@ -38,6 +38,7 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ProjectsComponent } from './projects/projects/projects.component';
 import { InterestsComponent } from './Interests/interests/interests.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectDetailsDialogComponent } from './ProjectDetailsDialog/projectDetailsDialog/projectDetailsDialog.component';
 
 @NgModule({
   declarations: [	
@@ -47,6 +48,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     LinkButtonsComponent,
     InterestsComponent,
+    ProjectDetailsDialogComponent
    ],
   imports: [
     BrowserModule,
