@@ -48,12 +48,14 @@ export class ProjectsComponent implements OnInit {
    * Open Dialog with project details
    */
    openProjectDetailsDialog( projectID: Number) {
-     console.log(projectID);
+     const projectToDisplay = this.projects.find(function (project) {
+       return project.id === projectID;
+     })
     this.dialog.open(ProjectDetailsDialogComponent, {
       maxWidth: '85%',
       minWidth: '80%',
       maxHeight: '90%',
-      data: { username: '', password: '', registerPassword: '' },
+      data: projectToDisplay,
     });
   }
 }
