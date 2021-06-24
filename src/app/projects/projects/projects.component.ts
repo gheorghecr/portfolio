@@ -48,6 +48,7 @@ export class ProjectsComponent implements OnInit {
    * Open Dialog with project details
    */
    openProjectDetailsDialog( projectID: Number) {
+     console.log(projectID);
     this.dialog.open(ProjectDetailsDialogComponent, {
       maxWidth: '85%',
       minWidth: '80%',

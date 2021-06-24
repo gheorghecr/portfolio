@@ -19,7 +19,7 @@
         <div class="titleOfProject mt-2">{{ project.title }}</div>
         <div class="mt-4 projectText">{{ project.description }}</div>
         <div class="mt-4 projectText">{{ project.technologies }}</div>
-        <a class="btn btn-xs btn-outline-dark mt-4 projectText">See More</a>
+        <a class="btn btn-xs btn-outline-dark mt-4 projectText" (click)="openProjectDetailsDialog( project.id )">See More</a>
       </div>
 
       <div [@slideRightToLeft] class="mt-4">
