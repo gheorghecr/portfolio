@@ -22,3 +22,15 @@
   h2{
     text-align: center;  
   }
+
+  .carousel,.item,.active{
+    height:100%;
+  }
+
+  .carousel-inner{
+      height:100%;
+  }
+
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+  }
