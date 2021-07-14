@@ -14,7 +14,7 @@
 
   .titleOfProject {
     color: rgb(26, 188, 156);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 30px;
     font-family: "Montserrat";
   }
@@ -27,10 +27,14 @@
     height:100%;
   }
 
-  .carousel-inner{
-      height:100%;
+  .carousel-control-next,
+  .carousel-control-prev /*, .carousel-indicators */ {
+      filter: invert(100%);
   }
 
-  .carousel-inner > .item > img {
-    margin: 0 auto;
+  .close-button-end {
+    align-items: center;
+    align-self: center;
+    align-content: center;
   }
+
