@@ -4,6 +4,8 @@ export interface Projects {
     description: string;
     technologies: string;
     thumbnailImagePath: string;
+    about: string;
+    images: [string];
   }
   
   export const projects = [
@@ -14,8 +16,7 @@ export interface Projects {
       technologies: 'Technologies: Swift, Storyboard, CocoaTouch, CocoaPods MVC, TCP Connections and CoreData.',
       thumbnailImagePath: './assets/images/iosEricc_chartNew.png',
       about: "The single-page application was a coursework where I had to develop a full stack application by myself. For this real estate application, we have the agent and then the normal user. The main features that this project included were to register as an agent, add properties to sell, including photos, manage the properties (Update/Delete), and read the messages from the clients. The normal user could only see the  list of properties and send a message to the relevant agent. The backend server had implemented, authentication method, different roles  and permissions for a different types of users, it had a JSON schema Validation, OpenAPI documentation, JSDoc for code documentation and API's testing. The application allowed as well to search for properties by keywords.", 
-      images: ["./assets/images/iosEricc_chartNew.png", ],
-      descriptions: ["List of the properties available"], 
+      images: ["./assets/images/iosEricc_chartNew.png", "./assets/images/iosEricc_chartNew.png", ],
     },
     {
       id: 2,
@@ -24,8 +25,7 @@ export interface Projects {
       technologies: 'NodeJS, Koa, React, JavaScript, REST API, Ant Design, MySQL.',
       thumbnailImagePath: './assets/images/spa_propertyList.png',
       about: "The single-page application was a coursework where I had to develop a full stack application by myself. For this real estate application, we have the agent and then the normal user. The main features that this project included were to register as an agent, add properties to sell, including photos, manage the properties (Update/Delete), and read the messages from the clients. The normal user could only see the  list of properties and send a message to the relevant agent. The backend server had implemented, authentication method, different roles  and permissions for a different types of users, it had a JSON schema Validation, OpenAPI documentation, JSDoc for code documentation and API's testing. The application allowed as well to search for properties by keywords.", 
-      images: ["./assets/images/iosEricc_chartNew.png", ],
-      descriptions: ["List of the properties available"], 
+      images: ["./assets/images/iosEricc_chartNew.png", "./assets/images/iosEricc_chartNew.png", ], 
     },
     {
       id: 3,
@@ -35,6 +35,5 @@ export interface Projects {
       thumbnailImagePath: './assets/images/econ_mainDasboard.png',
       about: "The single-page application was a coursework where I had to develop a full stack application by myself. For this real estate application, we have the agent and then the normal user. The main features that this project included were to register as an agent, add properties to sell, including photos, manage the properties (Update/Delete), and read the messages from the clients. The normal user could only see the  list of properties and send a message to the relevant agent. The backend server had implemented, authentication method, different roles  and permissions for a different types of users, it had a JSON schema Validation, OpenAPI documentation, JSDoc for code documentation and API's testing. The application allowed as well to search for properties by keywords.", 
       images: ["./assets/images/iosEricc_chartNew.png", ],
-      descriptions: ["List of the properties available"], 
     }
   ];
