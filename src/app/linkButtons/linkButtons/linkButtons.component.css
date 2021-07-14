@@ -8,3 +8,12 @@
 .buttonRounded {
     border-radius: 10px;
 }
+
+.my-resume-link {
+    padding-top: 20px;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
