@@ -13,6 +13,18 @@ export interface Projects {
   
   export const projects = [
     {
+      id: 4,
+      title: 'MUZZI',
+      description: 'The application is a Party Game that focuses on finding more about our friends or family and getting everyone together through music. Where I was responsible for the planning, development and testing of the application. With this project I was capable to quickly learn FLUTTER, and the entire process to publish and application on the APP STORE & PLAY STORE.',
+      technologies: 'Technologies: Flutter, Dart, Firebase, REST.',
+      thumbnailImagePath: './assets/images/iosEricc_chartNew.png',
+      about: "The mobile application was side project that me and three other friends from university decided to develop using FLUTTER. It allows a group of friends or family to join together in the same lobby and find more about each other trough music. For the music provider we used the DEEZER API's.", 
+      images: ['./assets/images/iosEricc_chartNew.png', './assets/images/iosEricc_requestEvents1Dark.png', './assets/images/iosEricc_EventsNew.png', './assets/images/iosEricc_eventEntrysNew.png', './assets/images/iosEricc_deleteAtacchement.png',],
+      githubLink: "",
+      appStoreLink: "https://apps.apple.com/gb/app/muzzi/id1558392121",
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.muzzi.bulbupmedia",
+    },
+    {
       id: 1,
       title: 'REC',
       description: 'I was the sole developer for Remote Engineer Console as it was made as part of my placement work. REC is an iOS app providing remote access to bureau data for in-the-field operatives. Its features include: in-app messaging system (including sending and receiving attachments) and the possibility to display data as charts.',
