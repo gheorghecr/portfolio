@@ -11,6 +11,7 @@ Hello and welcome to my personal portfolio!
 
 ## Technologies
 
+- Angular
 - HTML
 - CSS
 - JavaScript
