@@ -25,6 +25,7 @@ img {
 }
 
 .centerForPersonalName {
+  color: white;
   margin: auto;
   max-width: 800px;
   padding-top: 50px;
@@ -32,6 +33,7 @@ img {
 }
 
 .titleText {
+  color: white;
   font-size: 400%;
   font-weight: bold;
   line-height: 1.4;
@@ -40,6 +42,7 @@ img {
 }
 
 .divForIntro {
+  color: white;
   padding-top: 30px;
   padding-left: 100px;
   padding-right: 100px;

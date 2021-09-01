@@ -5,5 +5,8 @@
     text-align: center;
     padding-top: 10px;
     color: white;
-  }
+}
   
+.background-top {
+  background-color: rgb(26, 37, 47);
+}
