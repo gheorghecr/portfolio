@@ -2,10 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProgressSpinnerComponent } from './ProgressSpinner/ProgressSpinner/ProgressSpinner.component';
 import { HeaderComponent } from './header/header/header.component';
 import { LinkButtonsComponent } from './linkButtons/linkButtons/linkButtons.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, }  from '@angular/material/button';
 import { MatSidenavModule, }  from '@angular/material/sidenav';
@@ -43,7 +41,6 @@ import { ProjectDetailsDialogComponent } from './ProjectDetailsDialog/projectDet
 @NgModule({
   declarations: [	
     AppComponent,
-    ProgressSpinnerComponent,
     ProjectsComponent,
     HeaderComponent,
     LinkButtonsComponent,
