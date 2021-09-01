@@ -20,6 +20,8 @@
         <div class="mt-4 projectText">{{ project.description }}</div>
         <div class="mt-4 projectText">{{ project.technologies }}</div>
         <a class="btn btn-xs btn-outline-dark mt-4 projectText" (click)="openProjectDetailsDialog( project.id )">See More</a>
+        <a *ngIf="project.appStoreLink" class="btn btn btn-social mx-1 buttonRounded app-store-btn ml-4" href={{project.appStoreLink}} target="_blank"> <img src="assets/images/app-store.svg" alt="APP STORE LINK"></a>
+        <a *ngIf="project.appStoreLink" class="btn btn btn-social mx-1 buttonRounded play-store-btn img-fluid" href={{project.appStoreLink}} target="_blank"> <img src="assets/images/google-play-icon.svg" alt="PLAY STORE LINK"></a>
       </div>
 
       <div [@slideRightToLeft] class="mt-4">
@@ -44,6 +46,8 @@
         <div class="mt-4 projectText">{{ project.description }}</div>
         <div class="mt-4 projectText">{{ project.technologies }}</div>
         <a class="btn btn-xs btn-outline-dark mt-4 projectText" (click)="openProjectDetailsDialog( project.id )">See More</a>
+        <a *ngIf="project.appStoreLink" class="btn btn btn-social mx-1 buttonRounded app-store-btn ml-4" href={{project.appStoreLink}} target="_blank"> <img src="assets/images/app-store.svg" alt="APP STORE LINK"></a>
+        <a *ngIf="project.appStoreLink" class="btn btn btn-social mx-1 buttonRounded play-store-btn img-fluid" href={{project.appStoreLink}} target="_blank"> <img src="assets/images/google-play-icon.svg" alt="PLAY STORE LINK"></a>
       </div>
     </div>
   </ng-template>

@@ -51,3 +51,13 @@ img {
 .projectText {
   font-family: "Montserrat";
 }
+
+.app-store-btn {
+  max-height: 30px;
+  max-width: 170px;
+}
+
+.play-store-btn {
+  max-height: 30px;
+  max-width: 170px;
+}
