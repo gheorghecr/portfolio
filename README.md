@@ -7,7 +7,7 @@ Hello and welcome to my personal portfolio!
 
 ## Preview
 
-![Alt Text](/assets/preview.gif)
+![Alt Text](src/assets/preview.gif)
 
 ## Technologies
 
